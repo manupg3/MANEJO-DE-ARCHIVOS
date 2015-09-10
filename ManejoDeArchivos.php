@@ -13,9 +13,16 @@
 		   $esc=fwrite($archivo,"LUGAR DE NACIMIENTO: ADROGUE");
 		   if($esc > 0)
 		{
-			echo "SE PUDO ESCRIBIR EN EL ARCHIVO<br/>";			
+			echo "</br>SE PUDO ESCRIBIR EN EL ARCHIVO<br/>";			
 		}
 		 fclose($archivo);
+		 
+		  $path_origen="TXT/archivo2.txt";
+		  $path_destino="TXT/archivo3.txt";
+		  
+		  $copiar= copy($path_origen,$path_destino);
+		  
+         		 
 		?>
 		 
 	</body>
