@@ -22,6 +22,9 @@
 		  
 		  $copiar= copy($path_origen,$path_destino);
 		  
+		  $path="TXT/archivo3.txt";
+		  unlink($path);
+		  
          		 
 		?>
 		 
